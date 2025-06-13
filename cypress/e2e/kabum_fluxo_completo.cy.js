@@ -10,8 +10,8 @@ describe('Fluxo completo de compra e remoção no Kabum', () => {
     cy.visit('https://www.kabum.com.br/login?redirect_uri=https://www.kabum.com.br/ofertas/matchdeofertas')
 
     cy.get('body').then(($body) => {
-      if ($body.find('button:contains("Aceitar")').length) {
-        cy.contains('button', 'Aceitar').click({ force: true })
+      if ($body.find('button:contains("Entendi")').length) {
+        cy.contains('button', 'Entendi').click({ force: true })
       }
     })
   })
